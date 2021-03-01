@@ -1,0 +1,67 @@
+//using variables
+var test = 123
+
+//declarartion of function : methode 1
+function myfunction(){
+    console.log("Hello from function !");
+}
+
+//using arrays
+
+var myarray =["HTML","CSS","JS"];
+
+//Getting values by index : starting index 0
+console.log(myarray[0]);
+
+//Getting all value using classical for
+for (let i = 0; i < myarray.length; i++) {
+    console.log("Line" + i + " : "
+    + myarray[i]);
+    
+}
+
+///Getting all value using classical foreach
+
+myarray.forEach((item,index)=>{
+    console.log("Index " + index + " value : " + item);
+});
+
+////declarartion of function : methode 2
+
+mySecondFunction = () =>{
+    console.log("Hello from mySecondFunction !");
+}
+
+//using JSON
+
+var simpleJson ={
+    "name":"Albert",
+    "age":18
+}
+console.log(simpleJson.name)
+console.log(simpleJson)
+
+var advancedJson ={
+    "person":[
+        {
+            "name": "Issa",
+            "age" : 5
+        },
+        {
+            "name": "Aly",
+            "age" : 10
+        }
+    ]
+};
+console.log(advancedJson)
+advancedJson.person.forEach((item,index)=>{
+    console.log("===> Name " + item.name)
+}
+)
+
+//calling function
+myfunction();
+mySecondFunction();
+console.log("The value of " + test);
+//printing values
+console.log("Hello Word !");
